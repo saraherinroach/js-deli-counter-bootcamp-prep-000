@@ -19,7 +19,7 @@ function currentLine (line) {
   while (countdown > 0) {
     var message = [`The line is currently: ${number}. ${line[number-1]}`];
     number++;
-    message.push(`, ${number}. ${line[number-1]}`);
+    message = `${message}, ${number}. ${line[number-1]}`;
     --countdown;
     return message;
   }
