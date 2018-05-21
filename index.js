@@ -14,14 +14,14 @@ function currentLine (line) {
   if (line.length === 0) {
     return "The line is currently empty."
   } else { 
-  var countdown = (line.length)+1;
+  var countdown = line.length;
   var number = 1;
   while (countdown > 0) {
     var message = [`The line is currently: ${number}. ${line[number-1]}`];
     number++;
     message = `${message}, ${number}. ${line[number-1]}`;
     --countdown;
-    return message;
   }
+  return message
   }
 }
