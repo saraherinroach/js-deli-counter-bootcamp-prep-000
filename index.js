@@ -17,7 +17,7 @@ function currentLine (line) {
   var countdown = line.length;
   var number = 1;
   var message = [`The line is currently: ${number}. ${line[number-1]}`];
-  while (countdown > 0) {
+  while (countdown > 1) {
     number++;
     message = `${message}, ${number}. ${line[number-1]}`;
     --countdown;
